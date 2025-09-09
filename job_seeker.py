@@ -178,18 +178,18 @@ async def analyze_resume_job_seeker(uploaded_file, jd):
         st.error(f"Server error: {str(e)}. Please try again later.")
         return False
 
-# Job Seeker App UI
 def job_seeker_app():
-    st.title("CV Ranker - Job Seeker Dashboard")
-    st.markdown("**Powered by PakistanRecruitment**", unsafe_allow_html=True)
+    st.title("CV Analyzer & Career Coach")
+    st.markdown('**Powered by <a href="https://pakistanrecruitment.com/">PakistanRecruitment.com</a>**', unsafe_allow_html=True)
     st.write("Welcome!")
 
     st.header("Match your CV with any Job Post in seconds.", divider="grey")
     st.markdown('''
         **How to use:**
         1. Upload your resume in PDF, MS Word (.doc, .docx) format.
-        2. Paste the job description in the text area.
-        3. Click Submit to analyze.
+        2. Paste the job description of role you want to apply for and see your compatibility with the job.
+        3. Get a clear match score, see what's missing in your resume, and receive career advice to improve your chances for landing a global job.
+        4. Click Submit to analyze.
     ''')
 
     upload_file = st.file_uploader("Upload your resume", type=["pdf", "doc", "docx"],
