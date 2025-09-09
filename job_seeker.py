@@ -180,7 +180,6 @@ async def analyze_resume_job_seeker(uploaded_file, jd):
 
 def job_seeker_app():
     st.title("CV Analyzer & Career Coach")
-    st.markdown('**Powered by <a href="https://pakistanrecruitment.com/">PakistanRecruitment.com</a>**', unsafe_allow_html=True)
     st.write("Welcome!")
 
     st.header("Match your CV with any Job Post in seconds.", divider="grey")
